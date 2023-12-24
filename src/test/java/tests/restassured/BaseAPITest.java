@@ -5,12 +5,14 @@ import api.UserAPI;
 import dto.UserDTO;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
+import utils.RandomUtils;
 
 public class BaseAPITest {
     String token = "";
     UserAPI userAPI = new UserAPI();
     CarsAPI carsAPI = new CarsAPI();
     SoftAssert softAssert = new SoftAssert();
+    RandomUtils randomUtils = new RandomUtils();
 
     UserDTO user = UserDTO.builder()
             .username("testqa20@gmail.com")

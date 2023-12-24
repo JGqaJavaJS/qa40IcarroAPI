@@ -6,10 +6,9 @@ import dto.UserDTO;
 
 import static com.jayway.restassured.RestAssured.given;
 
-public class UserAPI {
+public class UserAPI extends BaseAPI{
 
     Response responseLogin = null;
-    String baseUrl =  "https://ilcarro-backend.herokuapp.com";
 
     private Response getResponseLogin(UserDTO user) {
         responseLogin = given()
