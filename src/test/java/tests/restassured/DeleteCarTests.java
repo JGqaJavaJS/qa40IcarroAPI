@@ -27,7 +27,7 @@ public class DeleteCarTests extends BaseAPITest {
 //                "Car added successfully");
         softAssert.assertEquals(carsAPI.getStatusCodeDeleteCar(serNumber, token), 200,
                 "status code for delete car not 200");
-        softAssert.assertEquals(carsAPI.getMessageDeleteCar(serNumber, token), "");
+        softAssert.assertEquals(carsAPI.getMessageDeleteCar(serNumber, token), "Car deleted successfully");
         System.out.println(carsAPI.getMessageDeleteCar(serNumber, token));
         softAssert.assertAll();
     }
